@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>May Tinh Don Gian</title>
+</head>
+<body>
+<input type="text" id="result" value="">
+<table>
+    <tr>
+        <td><button value="1" onclick="f1()">1</button></td>
+        <td><button onclick="f2()">2</button></td>
+       <td><button onclick="f3()">3</button></td>
+       <td><button onclick="fadd()">+</button></td>
+
+    </tr> <tr>
+        <td><button onclick="f4()">4</button></td>
+        <td><button onclick="f5()">5</button></td>
+       <td><button onclick="f6()">6</button></td>
+       <td><button onclick="fsub()">-</button></td>
+
+    </tr> <tr>
+        <td><button onclick="f7()">7</button></td>
+        <td><button onclick="f8()">8</button></td>
+       <td><button onclick="f9()">9</button></td>
+       <td><button onclick="fmul()">x</button></td>
+
+    </tr> <tr>
+        <td><button onclick="fc()">C</button></td>
+        <td><button onclick="f0()">0</button></td>
+       <td><button onclick="feqa()">=</button></td>
+       <td><button onclick="fdiv()">/</button></td>
+
+    </tr>
+</table>
+<script>
+    let p=document.getElementById("result");
+    function f1(){
+        p.value=p.value+"1"
+    }
+    function f2(){
+        p.value=p.value+"2"
+    }
+    function f3(){
+        p.value=p.value+"3"
+    }
+    function f4(){
+        p.value=p.value+"4"
+    }
+    function f5(){
+        p.value=p.value+"5"
+    }
+    function f6(){
+        p.value=p.value+"6"
+    }
+    function f7(){
+        p.value=p.value+"7"
+    }
+    function f8(){
+        p.value=p.value+"8"
+    }
+    function f9(){
+        p.value=p.value+"9"
+    }
+    function f0(){
+        p.value=p.value+"0"
+    }
+    function fadd(){
+        p.value=p.value+"+"
+    }
+    function fsub(){
+        p.value=p.value+"-"
+    }
+    function fmul(){
+        p.value=p.value+"*"
+    }
+    function fdiv(){
+        p.value=p.value+"/"
+    }
+    function feqa(){
+        p.value=eval(p.value)
+    }
+    function fc(){
+        p.value=""
+    }
+
+</script>
+</body>
+</html>
